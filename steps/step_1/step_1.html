@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <title>رنگ</title>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top: 10px;">
+                <h2 style="text-align: center;">نشان دهنده رنگ</h2>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 offset-4"
+                style="text-align: right;direction: rtl;margin-top: 30px;">
+                <div class="form-group">
+
+                    <label for="rgb" class="col-form-label">آر جی بی</label>
+                    <input type="text" class="form-control" id="rgb">
+
+                </div>
+                <div class="alert alert-warning" role="alert" id="rgbError" style="display: none;">
+                    فرمت ورودی درست نمی باشد
+                </div>
+                <div style="text-align: center;">
+                    <button type="button" class="btn btn-success" id="rgbClick">نشان دادن</button>
+                    <button type="button" id="rgbShow" style="width: 50px;height: 38px;display: none;margin-right: 5px;"
+                        class="btn"></button>
+                </div>
+
+                <div class="form-group" style="margin-top: 10px;">
+                    <label for="hex">هگزا دسیمال</label>
+                    <input type="text" id="hex" class="form-control">
+
+                </div>
+
+                <div class="alert alert-warning" role="alert" id="hexError" style="display: none;">
+                    فرمت ورودی درست نمی باشد
+                </div>
+
+                <div style="text-align: center;">
+
+                    <button type="button" class="btn btn-success" id="hexClick" style="margin-top: 0;">نشان
+                        دادن</button>
+                    <button type="button" id="hexShow" style="width: 50px;height: 38px;display: none;margin-right: 5px;"
+                        class="btn"></button>
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../../static/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
