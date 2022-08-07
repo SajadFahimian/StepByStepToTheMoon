@@ -25,6 +25,10 @@ function holdShift(event) {
         btn.classList.add("none");
 
     }
+    playAudio(event);
+}
+
+function playAudio(event) {
     if (keyRange.indexOf(event.key.toLowerCase()) != -1) {
         if (event.key == ":") {
         audioObject[";"].load();
@@ -36,7 +40,6 @@ function holdShift(event) {
         }
 
     }
-    
 }
 function leftShift(event) {
     if (event.key == "Shift") {
@@ -54,3 +57,11 @@ function leftShift(event) {
 }
 document.addEventListener("keydown", holdShift);
 document.addEventListener("keyup", leftShift);
+
+
+// This event listener for when click on key piano then play audio
+
+document.querySelector(".main").addEventListener("click", (evt) => {
+    evt.key = evt.target.id;
+    playAudio(evt);
+});
