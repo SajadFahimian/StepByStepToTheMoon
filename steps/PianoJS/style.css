@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+}
+
+.black {
+    background-color: black;
+    color: whitesmoke;
+
+    width: 3rem;
+    height: 12rem;
+    position: absolute;
+
+}
+
+.white {
+    background-color: whitesmoke;
+    color: black;
+
+    width: 4.5rem;
+    height: 20rem;
+
+}
+
+.white,
+.black {
+    border-radius: 0 0 10px 10px;
+    font-size: 2rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+
+
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Vazirmatn', sans-serif;
+    font-size: 3rem;
+    color: whitesmoke;
+    margin: 2rem 0 4rem;
+}
+
+.white span,
+.black span {
+    display: inline-block;
+    position: absolute;
+    bottom: 1rem;
+    transition: display 1s ease 1s;
+
+}
+
+.black span {
+    left: 0.8rem;
+}
+
+div>div:nth-of-type(2) span {
+    left: 0.5rem;
+
+}
+
+div>div:nth-of-type(16) span {
+    left: 1.1rem;
+
+}
+
+.main {
+    position: relative;
+
+    display: inline-block;
+
+}
+
+button {
+    border: whitesmoke solid 0.1rem;
+    color: whitesmoke;
+    background-color: inherit;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+}
+
+main {
+
+    display: flex;
+    justify-content: center;
+
+
+    align-items: center;
+}
