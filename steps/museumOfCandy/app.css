@@ -1,0 +1,98 @@
+body {
+    background-color: #f5d9d5;
+    font-family: "Nunito", sans-serif;
+}
+
+#mainNavbar {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.5rem;
+
+}
+
+#mainNavbar .navbar-brand {
+    color: #ea1c2c;
+    font-size: 1.5rem;
+}
+
+#mainNavbar .nav-link {
+    color: whitesmoke;
+    transition: color 200ms ease-in-out;
+
+}
+
+#mainNavbar .nav-link:hover,
+#mainNavbar .nav-link:focus {
+    color: #ea1c2c;
+
+}
+
+#mainNavbar button {
+    outline: none;
+}
+
+#mainNavbar button:hover {
+    cursor: inherit;
+}
+
+
+#mainNavbar button span svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: color 200ms ease-in-out;
+    color: whitesmoke;
+
+}
+
+#mainNavbar button span svg:hover,
+#mainNavbar button span svg:focus {
+    color: #ea1c2c;
+    cursor: pointer;
+}
+
+#headingGroup h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+    color: whitesmoke;
+    font-size: 3rem;
+}
+
+#headingGroup span {
+    color: #ea1c2c;
+}
+
+@media (max-width:1200px) {
+    #headingGroup h2 {
+        font-size: 2.75rem;
+    }
+}
+
+.blurb h2 {
+    color: #ea1c2c;
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.blurb h3 {
+    color: darkred;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.blurb p {
+    color: #f498b8;
+    font-size: 1.125rem;
+    font-weight: 100;
+    line-height: 2;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.navbar.scrolled {
+    background-color: #dec0de;
+    transition: background-color 200ms ease-in-out;
+}
