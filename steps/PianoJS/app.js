@@ -1,4 +1,5 @@
 let btn = document.querySelector("button");
+btn.classList.add("inBlock");
 
 let spans = document.querySelectorAll("span");
 
@@ -12,15 +13,17 @@ for (let index = 0; index < allAudio.length; index++) {
 }
 
 for (let span of Array.from(spans)) {
-    span.style.display = "none";
+    span.classList.add("none");
 }
 keyRange.push(":");
 async function holdShift(event) {
     if (event.key == "Shift") {
         for (let span of Array.from(spans)) {
-            span.style.display = "inline-block";
+            span.classList.remove("none");
+            span.classList.add("inBlock");
         }
-        btn.style.display = "none";
+        btn.classList.remove("inBlock");
+        btn.classList.add("none");
 
     }
     if (keyRange.indexOf(event.key.toLowerCase()) != -1) {
@@ -37,10 +40,12 @@ async function holdShift(event) {
 function leftShift(event) {
     if (event.key == "Shift") {
         for (let span of Array.from(spans)) {
-            span.style.display = "none";
+            span.classList.remove("inBlock");
+            span.classList.add("none");
         }
+        btn.classList.remove("none");
         
-        btn.style.display = "inline-block";
+        btn.classList.add("inBlock");
 
 
     }

@@ -43,7 +43,6 @@ h1 {
 
 .white span,
 .black span {
-    display: inline-block;
     position: absolute;
     bottom: 1rem;
     transition: display 1s ease 1s;
@@ -91,4 +90,12 @@ main {
 
 
     align-items: center;
+}
+
+.none {
+    display: none;
+}
+
+.inBlock {
+    display: inline-block;
 }
